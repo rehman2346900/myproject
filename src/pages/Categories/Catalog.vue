@@ -2,7 +2,6 @@
   <Header />
   <div class="cont">
     <div class="cot">
-      <img src="" alt="">
     </div>
     <div class="box">
       <div class="list-box1">

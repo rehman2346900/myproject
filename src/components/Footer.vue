@@ -34,19 +34,6 @@
         <h6>My Account</h6>
       </div>
       <div class="footer-text-one">
-        <h4>Pictures</h4>
-        <div class="pics1">
-          <img src="./images/boy6.jpg" alt="">
-          <img src="./images/boyshoe.jpg" alt="">
-          <img src="./images/girlback.jpg" alt="">
-        </div>
-        <div class="pics2">
-          <img src="./images/capgirl.jpg" alt="">
-          <img src="./images/skygirl.jpg" alt="">
-          <img src="./images/selfiegirl.jpg" alt="">
-        </div>
-      </div>
-      <div class="footer-text-one">
         <h4>GET NEWSLETTERS</h4>
         <input type="text" placeholder="Type Your Email Here">
 
