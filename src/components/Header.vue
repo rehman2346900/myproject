@@ -20,11 +20,11 @@
       <hr />
       <div class="header2">
         <div class="tags-div">
-          <router-link to="/">HOME</router-link>
+          <router-link to="/Home">HOME</router-link>
           <router-link to="/Catalog">CATALOG</router-link>
           <router-link to="">PRODUCT</router-link>
           <router-link to="/Catalog">SHOP</router-link>
-          <router-link to="">ACCOUNT</router-link>
+          <router-link to="/Pagination">ACCOUNT</router-link>
           <router-link to="/Footer">ABOUT US</router-link>
         </div>
         <div class="search-div">

@@ -128,6 +128,7 @@ export default {
 
   .bannerImg {
     max-width: 100%;
+    background-size: contain;
   }
 
   .textOnBnner {

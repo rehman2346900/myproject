@@ -2,7 +2,7 @@
   <Header />
   <div class="cont">
     <div class="cot">
-      <img src="../assets/breadcumb2.jpg" alt="" />
+      <img src="" alt="">
     </div>
     <div class="box">
       <div class="list-box1">
@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-
+    
     <div class="products">
       <div class="postDiv" v-for="postitems in products" v-bind:key="postitems">
         <div class="imagediv">
@@ -63,6 +63,7 @@
 <script>
 import Header from "../../components/Header.vue";
 import Footer from "../../components/Footer.vue";
+
 import axios from "axios";
 
 export default {
