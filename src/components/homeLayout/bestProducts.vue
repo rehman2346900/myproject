@@ -74,7 +74,7 @@
         <div class="best-rating-product">
           <div class="thumb">
             <a href="#">
-              <img src="../../assets/sm-productk" alt="Product" />
+              <!-- <img src="../../assets/sm-productk" alt="Product" /> -->
             </a>
           </div>
           <div class="content">
@@ -108,7 +108,7 @@
         <div class="best-rating-product mt--30">
           <div class="thumb">
             <a href="#">
-              <img src="../../assets/sm-productk.jpg" alt="Product" />
+              <!-- <img src="../../assets/sm-productk.jpg" alt="Product" /> -->
             </a>
           </div>
           <div class="content">
