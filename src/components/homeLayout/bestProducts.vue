@@ -7,7 +7,7 @@
           <div class="thumbnail mt--30">
             <img
               class="w-100"
-              src="../../assets/banner-04 (1).jpg"
+              src="../../assets/bannerimg.jpg"
               alt="Banner Images"
             />
           </div>
@@ -22,7 +22,7 @@
         <div class="best-rating-product">
           <div class="thumb">
             <a href="#">
-              <img src="../../assets/sm-product-01 (1).jpg" alt="Product" />
+              <img src="../../assets/sm-productl.jpg" alt="Product" />
             </a>
           </div>
           <div class="content">
@@ -39,7 +39,7 @@
         <div class="best-rating-product mt--30">
           <div class="thumb">
             <a href="#">
-              <img src="../../assets/sm-product-02 (1).jpg" alt="Product" />
+              <img src="../../assets/sm-productm.jpg" alt="Product" />
             </a>
           </div>
           <div class="content">
@@ -56,7 +56,7 @@
         <div class="best-rating-product mt--30">
           <div class="thumb">
             <a href="#">
-              <img src="../../assets/sm-product-03 (1).jpg" alt="Product" />
+              <img src="../../assets/sm-productn.jpg" alt="Product" />
             </a>
           </div>
           <div class="content">
@@ -74,7 +74,7 @@
         <div class="best-rating-product">
           <div class="thumb">
             <a href="#">
-              <img src="../../assets/sm-product-04.jpg" alt="Product" />
+              <img src="../../assets/sm-productk" alt="Product" />
             </a>
           </div>
           <div class="content">
@@ -91,7 +91,7 @@
         <div class="best-rating-product mt--30">
           <div class="thumb">
             <a href="#">
-              <img src="../../assets/sm-product-05.jpg" alt="Product" />
+              <img src="../../assets/sm-producti.jpg" alt="Product" />
             </a>
           </div>
           <div class="content">
@@ -108,7 +108,7 @@
         <div class="best-rating-product mt--30">
           <div class="thumb">
             <a href="#">
-              <img src="../../assets/sm-product-03 (1).jpg" alt="Product" />
+              <img src="../../assets/sm-productk.jpg" alt="Product" />
             </a>
           </div>
           <div class="content">
