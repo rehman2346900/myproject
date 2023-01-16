@@ -53,13 +53,7 @@
       <div class="type-footer">
         <h6>© 2022 Clothing. Made with by CodeCarnival</h6>
       </div>
-      <div class="tag-footer">
-        <img src="./images/pay1.png" alt="">
-        <img src="./images/pay2.png" alt="">
-        <img src="./images/pay3.png" alt="">
-        <img src="./images/pay4.png" alt="">
-        <img src="./images/pay5.png" alt="">
-      </div>
+  
     </div>
   </div>
 
