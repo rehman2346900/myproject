@@ -121,9 +121,6 @@ export default {
     topRated,
     Footer,
   },
-  data() {
-    return {};
-  },
   computed: {
     productDetail() {
       return this.$store.state.singleProduct;
@@ -132,19 +129,15 @@ export default {
   },
 
   mounted() {
-    //  console.log(data)
     this.$store.dispatch("productDetail", this.$route.params.id);
-
   },
 
   methods: {
     addToCart(id) {
-      
       this.$store.dispatch("addToCart", id);
       this.$router.push({
         name: "login"
       });
-      // console.log(id,"adftftg")
     },
   },
 };

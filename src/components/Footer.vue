@@ -1,68 +1,66 @@
 <template>
-
-
-  <div class="footer">
-    <div class="foot-one">
-      <div class="footer-text-one">
-        <h4>Contact Us</h4>
-        <div class="foot1">
-          <i class="fa-solid fa-location-dot"></i>
-          <p>Address: Your address goes here
-          </p>
-        </div>
-
-        <div class="foot1">
-          <i class="fa-solid fa-envelope"></i>
-          <p>info@example.com
-          </p>
-        </div>
-
-        <div class="foot1">
-          <i class="fa-solid fa-phone"></i>
-          <p>01234567890
-          </p>
-        </div>
+<div class="footer">
+  <div class="foot-one">
+    <div class="footer-text-one">
+      <h4>Contact Us</h4>
+      <div class="foot1">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Address: Your address goes here
+        </p>
       </div>
-      <div class="footer-text-one">
-        <h4>Information</h4>
 
-        <h6>My Account</h6>
-        <h6>My Account</h6>
-        <h6>My Account</h6>
-        <h6>My Account</h6>
-        <h6>My Account</h6>
-        <h6>My Account</h6>
+      <div class="foot1">
+        <i class="fa-solid fa-envelope"></i>
+        <p>info@example.com
+        </p>
       </div>
-      <div class="footer-text-one">
-        <h4>GET NEWSLETTERS</h4>
-        <input type="text" placeholder="Type Your Email Here">
 
-        <h4>Social Networks</h4>
-        <div id="sociallinks">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-pinterest"></i>
-          <i class="fa-brands fa-google"></i>
-          <i class="fa-brands fa-twitter"></i>
-        </div>
+      <div class="foot1">
+        <i class="fa-solid fa-phone"></i>
+        <p>01234567890
+        </p>
       </div>
     </div>
+    <div class="footer-text-one">
+      <h4>Information</h4>
 
+      <h6>My Account</h6>
+      <h6>My Account</h6>
+      <h6>My Account</h6>
+      <h6>My Account</h6>
+      <h6>My Account</h6>
+      <h6>My Account</h6>
+    </div>
+    <div class="footer-text-one">
+      <h4>GET NEWSLETTERS</h4>
+      <input type="text" placeholder="Type Your Email Here">
 
-    <div class="foot-two">
-      <div class="type-footer">
-        <h6>© 2022 Clothing. Made with by CodeCarnival</h6>
+      <h4>Social Networks</h4>
+      <div id="sociallinks">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-twitter"></i>
       </div>
-  
     </div>
   </div>
 
+  <div class="foot-two">
+    <div class="type-footer">
+      <h6>© 2022 Clothing. Made with by CodeCarnival</h6>
+    </div>
+
+  </div>
+</div>
 </template>
+
 <script>
 export default {
   name: 'Footer'
 }
 </script>
+
 <style scoped>
 .foot-one {
   display: flex;

@@ -1,36 +1,35 @@
 <template>
-  <div class="products">
-    <div class="postDiv" v-for="postitems in products" v-bind:key="postitems">
-      <div class="imagediv">
-        <router-link
-          :to="{ name: 'Productdetail', params: { id: postitems.id } }"
-        >
-          <img :src="postitems.thumbnail" alt="" />
-        </router-link>
-      </div>
-
-      <h3>{{ postitems.title }}</h3>
-
-      <p>{{ postitems.description.substring(0, 65) }}....</p>
-      <h4>${{ postitems.price }}</h4>
-      <h3>
-        <div class="product-rating">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        {{ postitems.rating }}(21)
-      </h3>
-      <router-link :to="{ name: 'editProduct', params: { id: postitems.id } }">
-        <button>UPDATE</button>
+<div class="products">
+  <div class="postDiv" v-for="postitems in products" v-bind:key="postitems">
+    <div class="imagediv">
+      <router-link :to="{ name: 'Productdetail', params: { id: postitems.id } }">
+        <img :src="postitems.thumbnail" alt="" />
       </router-link>
     </div>
-  </div>
 
-  <div class="texttt"></div>
+    <h3>{{ postitems.title }}</h3>
+
+    <p>{{ postitems.description.substring(0, 65) }}....</p>
+    <h4>${{ postitems.price }}</h4>
+    <h3>
+      <div class="product-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      {{ postitems.rating }}(21)
+    </h3>
+    <router-link :to="{ name: 'editProduct', params: { id: postitems.id } }">
+      <button>UPDATE</button>
+    </router-link>
+  </div>
+</div>
+
+<div class="texttt"></div>
 </template>
+
 <script>
 export default {
   name: "searchProduct",
@@ -67,15 +66,18 @@ export default {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 .postDiv img:hover {
   opacity: 0.4;
 }
+
 .postDiv p {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
 .postDiv h4 {
   display: block;
   margin-block-start: 0.5em;
@@ -84,6 +86,7 @@ export default {
   margin-inline-end: 0px;
   font-weight: bold;
 }
+
 .postDiv h3 {
   display: block;
   margin-block-start: 5px;
@@ -93,10 +96,12 @@ export default {
   font-weight: bold;
   display: flex;
 }
+
 .postDiv img {
   width: 100%;
   height: 30vh;
 }
+
 .postDiv button {
   margin: 10px;
   padding: 15px 30px;
@@ -111,12 +116,10 @@ export default {
   text-decoration: none;
   font-weight: 700;
   box-shadow: 0px 0px 14px -7px #f09819;
-  background-image: linear-gradient(
-    45deg,
-    #ff512f 0%,
-    #f09819 51%,
-    #ff512f 100%
-  );
+  background-image: linear-gradient(45deg,
+      #ff512f 0%,
+      #f09819 51%,
+      #ff512f 100%);
   cursor: pointer;
   touch-action: manipulation;
 }
@@ -138,9 +141,11 @@ export default {
     rgba(44, 187, 99, 0.25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
 }
+
 .postDiv a {
   text-decoration: none;
 }
+
 .product-rating {
   color: #ffc107;
 }
