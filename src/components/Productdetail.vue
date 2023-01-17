@@ -10,15 +10,26 @@
         </div>
       </div>
       <div class="img-select">
-        <!-- <div
-            class="img-item"
-            v-for="image in productimage"
-            v-bind:key="image"
-          >
-            <a href="#" data-id="1">
-              <img :src="image" alt="shoe image" />
-            </a>
-          </div> -->
+        <div class="img-item">
+          <a href="#" data-id="1">
+            <img :src="productDetail.thumbnail" alt="shoe image" />
+          </a>
+        </div>
+        <div class="img-item">
+          <a href="#" data-id="1">
+            <img :src="productDetail.thumbnail" alt="shoe image" />
+          </a>
+        </div>
+        <div class="img-item">
+          <a href="#" data-id="1">
+            <img :src="productDetail.thumbnail" alt="shoe image" />
+          </a>
+        </div>
+        <div class="img-item">
+          <a href="#" data-id="1">
+            <img :src="productDetail.thumbnail" alt="shoe image" />
+          </a>
+        </div>
       </div>
     </div>
     <!-- card right -->

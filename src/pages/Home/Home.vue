@@ -7,7 +7,7 @@
   <top-rated />
   <top-rated />
   <best-products />
-  <!-- <Footer /> -->
+  <Footer />
 </template>
 
 
