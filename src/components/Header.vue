@@ -20,7 +20,7 @@
       <hr />
       <div class="header2">
         <div class="tags-div">
-          <router-link to="/Home">HOME</router-link>
+          <router-link to="/">HOME</router-link>
           <router-link to="/Catalog">CATALOG</router-link>
           <router-link to="">PRODUCT</router-link>
           <router-link to="/Catalog">SHOP</router-link>
@@ -175,6 +175,9 @@ header hr {
   font-family: "Basic Commercial", sans-serif;
 }
 
+.container{
+  align-items: center;
+}
 .tags-div {
   margin-left: 8rem;
 }
@@ -242,6 +245,9 @@ header hr {
   }
 }
 @media (max-width: 740px) {
+  .header2 {
+    display: none;
+  }
   .social-icons {
     margin-left: 20rem;
   }
@@ -260,9 +266,7 @@ header hr {
   }
 }
 @media (max-width: 450px) {
-  .header2 {
-    display: none;
-  }
+  
 
   .social-icons {
     margin-left: 3rem;

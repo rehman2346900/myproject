@@ -1,5 +1,5 @@
 import axios from "axios";
-
+//----------------------== For Fetching All Products------------------------------------------
 export const getallproducts = ({ commit }) => {
    axios.get('https://dummyjson.com/products')
       .then(response => {
@@ -7,6 +7,11 @@ export const getallproducts = ({ commit }) => {
          console.log(response.data.products)
       })
 }
+
+
+
+
+// ///-----------For Showing Search Products----------------------------------------------------
 export const getsearchProducts = ({ commit }, searchId) => {
    axios.get(`https://dummyjson.com/products/search?q=${searchId}`)
       .then(response => {
@@ -15,6 +20,11 @@ export const getsearchProducts = ({ commit }, searchId) => {
       })
 }
 
+
+
+
+
+// /// ------------------For Getting Single Produc Details------------------------------------
 export const productDetail = ({ commit }, Id) => {
    axios.get(`https://dummyjson.com/products/${Id}`)
       .then(response => {
@@ -22,18 +32,24 @@ export const productDetail = ({ commit }, Id) => {
       })
 }
 
+
+
+
+// ///------------------------For Fetching User's Carts---------------------------------------
 export const getUserCarts = ({ commit }) => {
-   axios.get("https://dummyjson.com/carts/user/5")
+   axios.get("https://dummyjson.com/carts/user/15")
       .then(response => {
          commit('setCarts', response.data.carts)
          // console.log(response.data.carts)
       });
 }
-export const addToCart = ({ commit }, id) => {
-   // const cartItem = this.state.cart
-   // cartItem.push(id)
-   console.log(id)
-   commit('addToCart', id)
 
+
+
+
+///// -------------------------For Adding Product To Cart---------------------------------------
+export const addToCart = ({ commit }, id) => {
+   commit('addToCart', id)
+   console.log(id, "trtrtrt")
 
 }

@@ -1,7 +1,4 @@
 <template>
-  <div>
-    <p v-for="item in carts" :key="item.id">dkdnvnjfvf{{ item }}</p>
-  </div>
   <div class="card">
     <div class="row">
       <div class="col-md-8 cart">
@@ -18,60 +15,22 @@
         <div class="row border-top border-bottom">
           <div class="row main align-items-center">
             <div class="col-2">
-              <img class="img-fluid" src="" />
+              <img class="img-fluid"/>
             </div>
             <div class="col">
-              <div class="row text-muted"></div>
-              <div class="row">Cotton T-shirt</div>
-            </div>
-            <div class="col">
-              <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
-            </div>
-            <div class="col">
-              $44.00
-              <span class="close"><i class="fa-solid fa-trash fa-xl"></i></span>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="row main align-items-center">
-            <div class="col-2">
-              <img class="img-fluid" src="#" />
-            </div>
-            <div class="col">
-              <div class="row text-muted">Shirt</div>
-              <div class="row">Cotton T-shirt</div>
+              <div class="row text-muted">{{carts.brand}}</div>
+              <div class="row">{{carts.title}}</div>
             </div>
             <div class="col">
               <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
             </div>
             <div class="col">
-              $44.00
+              ${{carts.price}}
               <span class="close"><i class="fa-solid fa-trash fa-xl"></i></span>
             </div>
           </div>
         </div>
-        <div class="row border-top border-bottom">
-          <div class="row main align-items-center">
-            <div class="col-2">
-              <img class="img-fluid" src="#" />
-            </div>
-            <div class="col">
-              <div class="row text-muted">Shirt</div>
-              <div class="row">
-                Cotton T-shirt
-                <p></p>
-              </div>
-            </div>
-            <div class="col">
-              <a>-</a><a href="#" class="border">1</a><a href="#">+</a>
-            </div>
-            <div class="col">
-              $44.00
-              <span class="close"><i class="fa-solid fa-trash fa-xl"></i></span>
-            </div>
-          </div>
-        </div>
+      
         <div class="back-to-shop">
           <a href="#">&leftarrow;</a
           ><span class="text-muted">Back to shop</span>
@@ -116,9 +75,10 @@ export default {
       return this.$store.state.cart;
     },
   },
-  // mounted() {
-  //   console.log(this.$store.state.cart, "dhedhveh");
-  // },
+
+  mounted(){
+    console.log(this.$store.state.cart)
+  },
 };
 </script>
 

@@ -23,7 +23,7 @@
         </div>
         {{ postitems.rating }}(21)
       </h3>
-      <router-link :to="{ name: 'Pract', params: { id: postitems.id } }">
+      <router-link :to="{ name: 'editProduct', params: { id: postitems.id } }">
         <button>UPDATE</button>
       </router-link>
     </div>

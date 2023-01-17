@@ -65,15 +65,25 @@ export default {
 /*---------------------------------------- MIDDLEART 22222---------------------------------- */
 .middle-carts {
   background-image: url("../../assets/brand-bg.jpg");
-  width: 200.6vh;
-  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, center;
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .middle-carts img {
-  height: 60vh;
-  margin-left: 33rem;
+  height: auto;
+  margin-left: 28rem;
 }
-
+@media (max-width: 750px){
+  .middle-carts img {
+  height: auto;
+  margin-left: 8rem;
+}
+}
 /*--------------------------------------- CART------------------------------------------------------- */
 
 .row-titles {

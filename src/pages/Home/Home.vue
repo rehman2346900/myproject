@@ -7,11 +7,13 @@
   <top-rated />
   <top-rated />
   <best-products />
-  <Footer />
+  <!-- <Footer /> -->
 </template>
 
 
 <script>
+
+// ----------------------------------------SCRIPT------------------------------------//
 import Header from "../../components/Header.vue";
 import Footer from "../../components/Footer.vue";
 import middleCart from "../../components/homeLayout/middleCart.vue";

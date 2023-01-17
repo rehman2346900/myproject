@@ -12,7 +12,7 @@
       </div>
       <div class="row mt--20">
         <!-- Start Single Product -->
-        <div class="col-sm-3">
+        <div class="col-sm-3 mb-4">
           <div class="product">
             <div class="inner">
               <div class="thumbnail">
@@ -56,7 +56,7 @@
               </div>
             </div>
             <div class="content">
-              <h2><a href="#">Fit Wool Suit</a></h2>
+              <h2><a href="#">Fit Wool Suit perfect</a></h2>
               <span class="prize">$190.00</span>
             </div>
           </div>
@@ -64,7 +64,7 @@
         <!-- End Single Product -->
 
         <!-- Start Single Product -->
-        <div class="col-sm-3">
+        <div class="col-sm-3 mb-4">
           <div class="product">
             <div class="inner">
               <div class="thumbnail">
@@ -90,7 +90,7 @@
         <!-- End Single Product -->
 
         <!-- Start Single Product -->
-        <div class="col-sm-3">
+        <div class="col-sm-3 mb-4">
           <div class="product">
             <div class="inner">
               <div class="thumbnail">
@@ -126,8 +126,6 @@ export default {
 </script>
 
 <style scoped>
-/* =================================================carts================================== */
-
 /*--------------------------------------- MIDDLE-CARTS--111------------------------------------- */
 .section-title .title {
   font-size: 33px;
@@ -179,7 +177,7 @@ export default {
 
 .product .inner .product-icons .icons-inner a i {
   color: #ff5151;
-  font-size: 22px;
+  font-size-adjust: 10px;
 }
 
 .product .content h2 {
@@ -212,7 +210,15 @@ export default {
 .mt--30 {
   margin-top: 30px !important;
 }
-
+@media (max-width: 850px){
+  .product .inner .product-icons .icons-inner a i{
+    color: #ff5151;
+    width: 1rem;
+}
+.product-icons{
+  padding: 0;
+}
+}
 @media (min-width: 992px) {
   .col-lg-12 {
     flex: 0 0 100%;
@@ -227,12 +233,12 @@ export default {
   }
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
-}
+} */
 
 @media (min-width: 576px) {
   .col-sm-6 {

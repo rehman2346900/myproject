@@ -19,16 +19,22 @@ const routes = [
     component: Header,
 
   },
+  {
+    name: "Cart",
+    path: '/Cart',
+    component: Cart,
+
+  },
   
 
   {
     name: "Home",
-    path: '/Home',
+    path: '/',
     component: Home,
   },
   {
     name: "login",
-    path: '/',
+    path: '/login',
     component: login,
   },
   {

@@ -1,70 +1,60 @@
 <template>
-  <Header />
-  <div class="cont">
-    <div class="cot">
-    </div>
-    <div class="box">
-      <div class="list-box1">
-        <h1>CATEGORIES</h1>
-        <div class="categories">
-          <div
-            class="categories-list"
-            v-for="category in categories"
-            v-bind:key="category"
-          >
-            <router-link
-              :to="{ name: 'Categorydetail', params: { cat: category } }"
-            >
-              <p>{{ category }}</p>
-            </router-link>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="products">
-      <div class="postDiv" v-for="postitems in products" v-bind:key="postitems">
-        <div class="imagediv">
-          <router-link
-            :to="{ name: 'Productdetail', params: { id: postitems.id } }"
-          >
-            <img :src="postitems.thumbnail" alt="" />
+<Header />
+<div class="cont">
+  <div class="cot">
+  </div>
+  <div class="box">
+    <div class="list-box1">
+      <h1>CATEGORIES</h1>
+      <div class="categories">
+        <div class="categories-list" v-for="category in categories" v-bind:key="category">
+          <router-link :to="{ name: 'Categorydetail', params: { cat: category } }">
+            <p>{{ category }}</p>
           </router-link>
         </div>
-
-        <h3>{{ postitems.title }}</h3>
-
-        <p>{{ postitems.brand }}</p>
-        <h4>${{ postitems.price }} Only</h4>
-        <h3>
-          <div class="product-rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          {{ postitems.rating }}(21)
-        </h3>
-        <router-link
-          :to="{ name: 'editProduct', params: { id: postitems.id } }"
-        >
-          <button>Edit</button>
-        </router-link>
       </div>
     </div>
-    <Footer />
   </div>
 
-  <!-- -----------------------------------------SCRIPT------------------------------------------------- -->
+  <div class="products">
+    <div class="postDiv" v-for="postitems in products" v-bind:key="postitems">
+      <div class="imagediv">
+        <router-link :to="{ name: 'Productdetail', params: { id: postitems.id } }">
+          <img :src="postitems.thumbnail" alt="" />
+        </router-link>
+      </div>
+
+      <h3>{{ postitems.title }}</h3>
+
+      <p>{{ postitems.brand }}</p>
+      <h4>${{ postitems.price }} Only</h4>
+      <h3>
+        <div class="product-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        {{ postitems.rating }}(21)
+      </h3>
+      <router-link :to="{ name: 'editProduct', params: { id: postitems.id } }">
+        <button>Edit</button>
+      </router-link>
+    </div>
+  </div>
+  <Footer />
+</div>
+
+<!-- -----------------------------------------SCRIPT------------------------------------------------- -->
 </template>
 
 <script>
 import Header from "../../components/Header.vue";
 import Footer from "../../components/Footer.vue";
-
 import axios from "axios";
 
+//--------------------------------Adding Functionalities-------------------------------//
 export default {
   name: "Catalog",
 
@@ -95,18 +85,8 @@ export default {
     console.log(response.data);
     this.categories = response.data;
   },
-
-  //  computed:{
-  //    searchres (){
-  //      return this.items.filter(postitems => postitems.title.includes(this.searchinput))
-
-  //    }
-  //  }
 };
 </script>
-
-
-
 
 <style scoped>
 /* ---------------------------------------------STYLE------------------------------------------------- */
@@ -118,11 +98,13 @@ export default {
 .cont {
   background-color: #e8e8e8ed;
 }
+
 .cot img {
   width: 100%;
   object-fit: cover;
   height: auto;
 }
+
 .categories {
   display: flex;
   flex-flow: wrap;
@@ -149,6 +131,7 @@ export default {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 19px;
 }
+
 .categories-list a {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -161,9 +144,11 @@ export default {
   align-items: center;
   padding-top: 0.7rem;
 }
+
 .categories-list a:hover {
   color: gold;
 }
+
 .categories-list:hover {
   transition-duration: 0.8s;
   transform: scale(1.2);
@@ -171,17 +156,20 @@ export default {
   color: white;
   box-shadow: 0 8px 8px -4px lightblue;
 }
+
 @media (max-width: 850px) {
   .categories-list {
     width: 40%;
   }
 }
+
 @media (max-width: 600px) {
   .categories-list {
     width: 70%;
     font-size: 13px;
   }
 }
+
 .box {
   width: 100%;
   justify-content: center;
@@ -192,6 +180,7 @@ export default {
   height: 17rem;
   width: 15rem;
 }
+
 .item-box1 {
   display: flex;
 }
@@ -203,14 +192,17 @@ export default {
   font-family: "Sofia", sans-serif;
   justify-content: center;
 }
+
 .header1 {
   height: 50px;
   background: #333333;
   display: flex;
 }
+
 header {
   position: sticky;
 }
+
 .login-area {
   display: flex;
   color: aliceblue;
@@ -302,6 +294,7 @@ h2 {
   color: black;
   font-size: 15px;
 }
+
 .search-div input:focus {
   outline-style: none;
   box-shadow: none;
@@ -343,21 +336,25 @@ h2 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 @media (max-width: 800px) {
   .postDiv {
     width: 70%;
     margin: 01rem;
   }
 }
+
 .postDiv img:hover {
   opacity: 0.4;
 }
+
 .postDiv p {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
 .postDiv h4 {
   display: block;
   margin-block-start: 0.5em;
@@ -368,6 +365,7 @@ h2 {
   font-size: 17px;
   color: rgb(170, 127, 0);
 }
+
 .postDiv h3 {
   display: block;
   margin-block-start: 5px;
@@ -378,10 +376,12 @@ h2 {
   display: flex;
   font-size: 17px;
 }
+
 .postDiv img {
   width: 100%;
   height: 30vh;
 }
+
 .postDiv button {
   margin: 10px;
   padding: 15px 30px;
@@ -396,16 +396,15 @@ h2 {
   text-decoration: none;
   font-weight: 700;
   box-shadow: 0px 0px 14px -7px #f09819;
-  background-image: linear-gradient(
-    45deg,
-    #ff512f 0%,
-    #f09819 51%,
-    #ff512f 100%
-  );
+  background-image: linear-gradient(45deg,
+      #ff512f 0%,
+      #f09819 51%,
+      #ff512f 100%);
   cursor: pointer;
   touch-action: manipulation;
   transform: scale(0.95);
 }
+
 .postDiv a {
   text-decoration: none;
 }

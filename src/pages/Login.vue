@@ -23,17 +23,18 @@
 
 
 <script>
-// import axios from "axios";
-
+// ----------------------Adding Functionalities-----------------------------------//
 export default {
   name: "login",
 
   data() {
     return {
+      // to store user's enter data//
       name: "",
       password: "",
     };
   },
+  // Fetching API//
   methods: {
     async login() {
       let response = await fetch("https://dummyjson.com/auth/login", {
@@ -45,10 +46,12 @@ export default {
           // expiresInMins: 60, // optional
         }),
       });
+    
       const data = await response.json();
       console.log(data.username, data.password);
+      //pushing to next page//
       if (response.ok) {
-        this.$router.push({ name: "Home" });
+        this.$router.push({ name: "Cart" });
         console.log("successful");
       } else {
         alert("Please Enter Correct Username Or Passwprd");
@@ -63,6 +66,7 @@ export default {
 
 
 <style scoped>
+/*----------------------------------------style -------------------------------*/
 .cont {
   width: 250px;
   margin-left: 500px;

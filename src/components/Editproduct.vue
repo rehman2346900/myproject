@@ -32,11 +32,15 @@
     ><button @click="getData">SUBMIT</button></router-link
   >
 </template>
+
+
 <script>
+// ---------------------------------Adding Scripts-----------------------------------------///////////
 import axios from "axios";
 export default {
   name: "editProduct",
   props: "idd",
+  //---------------------------------- data-------------------------
   data() {
     return {
       listItems: {},
@@ -46,8 +50,9 @@ export default {
       rating: "",
     };
   },
-
+// ---------------------------------Methods function----------------------------------------------
   methods: {
+    // for getting data to change///////////////
     async getData() {
       const res = await fetch(
         "https://dummyjson.com/products/" + this.$route.params.id,
@@ -67,9 +72,5 @@ export default {
       console.log(finalRes);
     },
   },
-
-  // mounted() {
-  //   this.getData()
-  // }
 };
 </script>

@@ -63,6 +63,8 @@
 import axios from "axios";
 import Header from "../../components/Header.vue";
 import Footer from "../../components/Footer.vue";
+
+//--------------------------------Adding Functionalities-------------------------------//
 export default {
   name: "Categorydetail",
   components: {
@@ -72,12 +74,16 @@ export default {
 
   data() {
     return {
+      // to store categories data in array//
       items: [],
+
+      // To store params id in variable//
       cate: this.$route.params.cat,
     };
   },
 
   async created() {
+    // fetching API of products having same categories//
     let resp = await axios.get(
       "https://dummyjson.com/products/category/" + this.cate
     );

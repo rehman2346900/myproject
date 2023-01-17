@@ -1,16 +1,16 @@
 <template>
-  <Header />
-  <div class="card-wrapper">
-    <div class="card">
-      <!-- card left -->
-      <div class="product-imgs">
-        <div class="img-display">
-          <div class="img-showcase">
-            <img :src="productDetail.thumbnail" alt="shoe image" />
-          </div>
+<Header />
+<div class="card-wrapper">
+  <div class="card">
+    <!-- card left -->
+    <div class="product-imgs">
+      <div class="img-display">
+        <div class="img-showcase">
+          <img :src="productDetail.thumbnail" alt="shoe image" />
         </div>
-        <div class="img-select">
-          <!-- <div
+      </div>
+      <div class="img-select">
+        <!-- <div
             class="img-item"
             v-for="image in productimage"
             v-bind:key="image"
@@ -19,93 +19,93 @@
               <img :src="image" alt="shoe image" />
             </a>
           </div> -->
-        </div>
-      </div>
-      <!-- card right -->
-      <div class="product-content">
-        <h2 class="product-title">{{ productDetail.title }}</h2>
-        <a href="#" class="product-link">{{ productDetail.brand }}</a>
-        <div class="product-rating">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-          <span>{{ productDetail.rating }}(21)</span>
-        </div>
-
-        <div class="product-price">
-          <p class="new-price">
-            New Price: <span>${{ productDetail.price }} (5%)</span>
-          </p>
-          <p class="last-price">
-            Discount: <span>{{ productDetail.discountPercentage }}%</span>
-          </p>
-        </div>
-
-        <div class="product-detail">
-          <h2>about this item:</h2>
-          <p>
-            {{ productDetail.description }}
-          </p>
-          <p>
-            {{ productDetail.description }}
-          </p>
-          <ul>
-            <li>Color: <span>White</span></li>
-            <li>
-              Available: <span> in stock {{ productDetail.stock }} items</span>
-            </li>
-            <li>
-              Category: <span>{{ productDetail.category }}</span>
-            </li>
-            <li>Shipping Area: <span>All over the world</span></li>
-            <li>Shipping Fee: <span>Free</span></li>
-          </ul>
-        </div>
-
-        <div class="purchase-info">
-          <input type="number" min="0" value="1" />
-          <button type="button" class="btn" @click="addToCart">
-            Add to Cart <i class="fas fa-shopping-cart"></i>
-          </button>
-          <button type="button" class="btn">Compare</button>
-        </div>
-
-        <div class="social-links">
-          <p>Share At:</p>
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-whatsapp"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-pinterest"></i>
-          </a>
-        </div>
       </div>
     </div>
+    <!-- card right -->
+    <div class="product-content">
+      <h2 class="product-title">{{ productDetail.title }}</h2>
+      <a href="#" class="product-link">{{ productDetail.brand }}</a>
+      <div class="product-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <span>{{ productDetail.rating }}(21)</span>
+      </div>
 
-    <div class="other-product"></div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="section-title text-center mt-lg-5 mb-40">
-          <h2 class="title">Other Similar Products</h2>
-        </div>
+      <div class="product-price">
+        <p class="new-price">
+          New Price: <span>${{ productDetail.price }} (5%)</span>
+        </p>
+        <p class="last-price">
+          Discount: <span>{{ productDetail.discountPercentage }}%</span>
+        </p>
+      </div>
+
+      <div class="product-detail">
+        <h2>about this item:</h2>
+        <p>
+          {{ productDetail.description }}
+        </p>
+        <p>
+          {{ productDetail.description }}
+        </p>
+        <ul>
+          <li>Color: <span>White</span></li>
+          <li>
+            Available: <span> in stock {{ productDetail.stock }} items</span>
+          </li>
+          <li>
+            Category: <span>{{ productDetail.category }}</span>
+          </li>
+          <li>Shipping Area: <span>All over the world</span></li>
+          <li>Shipping Fee: <span>Free</span></li>
+        </ul>
+      </div>
+
+      <div class="purchase-info">
+        <input type="number" min="0" value="1" />
+        <button type="button" class="btn" @click="addToCart(productDetail)">
+          Add to Cart <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button type="button" class="btn">Compare</button>
+      </div>
+
+      <div class="social-links">
+        <p>Share At:</p>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-pinterest"></i>
+        </a>
       </div>
     </div>
-    <top-rated />
   </div>
-  <Footer />
+
+  <div class="other-product"></div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="section-title text-center mt-lg-5 mb-40">
+        <h2 class="title">Other Similar Products</h2>
+      </div>
+    </div>
+  </div>
+  <top-rated />
+</div>
+<Footer />
 </template>
 
 <script>
@@ -134,12 +134,17 @@ export default {
   mounted() {
     //  console.log(data)
     this.$store.dispatch("productDetail", this.$route.params.id);
+
   },
 
   methods: {
-    addToCart() {
-      this.$store.dispatch(" addToCart", this.$store.state.singleProduct);
-      this.$router.push({ name: "Cart" });
+    addToCart(id) {
+      
+      this.$store.dispatch("addToCart", id);
+      this.$router.push({
+        name: "login"
+      });
+      // console.log(id,"adftftg")
     },
   },
 };
@@ -150,6 +155,7 @@ export default {
   max-width: 1100px;
   margin: auto;
 }
+
 .card {
   border: 1px solid;
   margin-top: 3rem;
@@ -157,6 +163,7 @@ export default {
   background: #f2f2f2;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
 }
+
 img {
   width: 100%;
   display: block;
@@ -186,6 +193,7 @@ img {
   border: 1px solid;
   padding: 0.3rem;
 }
+
 .img-item img {
   height: 100%;
 }
@@ -194,6 +202,7 @@ img {
   opacity: 0.5;
   zoom: 0.1;
 }
+
 .img-showcase img:hover {
   opacity: 0.7;
   zoom: 0.1;
