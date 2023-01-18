@@ -49,7 +49,9 @@ export const getUserCarts = ({ commit }) => {
 
 ///// -------------------------For Adding Product To Cart---------------------------------------
 export const addToCart = ({ commit }, id) => {
-   commit('addToCart', id)
+   const addCart = this.state.cart
+   addCart.push(id)
+   commit('addToCart', addCart)
    console.log(id, "trtrtrt")
 
 }

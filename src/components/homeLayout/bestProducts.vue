@@ -132,7 +132,7 @@ export default {
 .bestProducts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  
   align-items: center;
   margin-top: 3rem;
   margin-bottom: 6rem;
@@ -143,6 +143,8 @@ export default {
   align-items: center;
  justify-content: space-between;
   border: 1px solid #f1f1f1;
+  margin-top: 2rem;
+  margin-left: 1rem;
 }
 
 .bestProduct {

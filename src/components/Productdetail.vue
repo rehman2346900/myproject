@@ -144,8 +144,8 @@ export default {
   },
 
   methods: {
-    addToCart(id) {
-      this.$store.dispatch("addToCart", id);
+    addToCart(productDetail) {
+      this.$store.dispatch("addToCart",productDetail);
       this.$router.push({
         name: "login"
       });

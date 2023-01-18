@@ -84,6 +84,12 @@ export default {
   margin-left: 8rem;
 }
 }
+@media (max-width: 680px){
+  .middle-carts img {
+  height: auto;
+  margin-left: 3rem;
+}
+}
 /*--------------------------------------- CART------------------------------------------------------- */
 
 .row-titles {
