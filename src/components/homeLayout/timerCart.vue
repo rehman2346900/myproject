@@ -78,6 +78,12 @@ export default {
   height: auto;
   margin-left: 28rem;
 }
+@media (max-width: 950px){
+  .middle-carts img {
+  height: auto;
+  margin-left: 15rem;
+}
+}
 @media (max-width: 750px){
   .middle-carts img {
   height: auto;
@@ -95,7 +101,6 @@ export default {
 .row-titles {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
   margin-left: -15px;
   font-size: 14px;
   line-height: 1.71429;
@@ -133,7 +138,9 @@ export default {
 .headingTitles li a.active::before {
   opacity: 1;
 }
-
+.row-titles ul{
+  width: 100%;
+}
 .headingTitles li a::before {
   position: absolute;
   content: "";
@@ -155,7 +162,6 @@ export default {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
   padding-left: 15px;
 }
 
